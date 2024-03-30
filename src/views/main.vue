@@ -3,6 +3,7 @@ import aurora from '@/components/aurora.vue'
 import action53r from '@/components/action53r.vue'
 import action53web from '@/components/action53web.vue'
 import pasjeu from '@/components/pasjeu.vue'
+import heuresbleues from '@/components/heuresbleues.vue'
 import soleil from '@/components/soleil.vue'
 import sites from '@/components/sites.vue'
 import stella from '@/components/stella.vue'
@@ -34,6 +35,7 @@ const changeGame= (game) => {
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('action53web')"><a>Action53 Web</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('action53r')"><a>Action53 R</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('aurora')"><a>La Gare d'Aurora</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('heuresbleues')"><a>Les Heures Bleues</a></li>
 
 
 		<li class="font-bold py-3">
@@ -49,6 +51,7 @@ const changeGame= (game) => {
 		</li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('sites')"><a>Sites</a></li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('prototypes')"><a>Prototypes</a></li>
+		<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>
 	</ul>
 
 
@@ -61,6 +64,8 @@ const changeGame= (game) => {
 		<action53r v-if="currentGame=='action53r'"></action53r>
 
 		<aurora v-if="currentGame=='aurora'"></aurora>
+
+		<heuresbleues v-if="currentGame=='heuresbleues'"></heuresbleues>
         
 		<pasjeu v-if="currentGame=='pasjeu'"></pasjeu>
 
