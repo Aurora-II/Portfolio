@@ -30,7 +30,7 @@ const showBig = (newImage) => {
             <div class="py-3">Logiciels utilisés : Godot, Audacity, ClipStudioPaint & Paint.NET </div>
 
             <div class=" py-5">
-                "Invocation" est un jeu crée lors de la Ludum Dare 55 s'étant déroulée le week end du 13 avril 2024. Le thème était "Invocation".
+                "Invocation" est un jeu crée lors de la Ludum Dare 55 s'étant déroulée le week-end du 13 avril 2024. Le thème était "Invocation".
             </div>
 
             <div class=" py-5">
@@ -38,7 +38,7 @@ const showBig = (newImage) => {
                </div> 
 
             <div class=" py-5">
-                Mon objectif lors de cette GameJam était de m'améliorer sur l'utilisation du moter 'Godot'
+                Mon objectif lors de cette GameJam était de m'améliorer sur l'utilisation du moteur 'Godot'
             </div>
 
             <div class="flex flex-wrap justify-around">
