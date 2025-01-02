@@ -6,6 +6,9 @@ import pasjeu from '@/components/pasjeu.vue'
 import heuresbleues from '@/components/heuresbleues.vue'
 import soleil from '@/components/soleil.vue'
 import sites from '@/components/sites.vue'
+import vespera from '@/components/vespera.vue'
+import asterie from '@/components/asterie.vue'
+import invocation from '@/components/invocation.vue'
 import stella from '@/components/stella.vue'
 import prototypes from '@/components/prototypes.vue'
 import chats from '@/components/chats.vue'
@@ -36,6 +39,8 @@ const changeGame= (game) => {
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('action53r')"><a>Action53 R</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('aurora')"><a>La Gare d'Aurora</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('heuresbleues')"><a>Les Heures Bleues</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('vespera')"><a>Vespera</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('asterie')"><a>Les Heures Bleues : Astérie</a></li>
 
 
 		<li class="font-bold py-3">
@@ -45,13 +50,14 @@ const changeGame= (game) => {
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('soleil')"><a>1,2,3... 10 soleil !</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('stella')"><a>Stella</a></li>
 			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('chats')"><a>Petits Chats</a></li>
+			<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"  @click="changeGame('invocation')"><a>Invocation</a></li>
 
 		<li class="font-bold py-3">
 		<span>Autres</span>
 		</li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('sites')"><a>Sites</a></li>
 		<li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500" @click="changeGame('prototypes')"><a>Prototypes</a></li>
-		<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>
+		<!--<a href="Curiculum Vitae.pdf"><li class="px-5 py-3 cursor-pointer hover:bg-sky-700 active:bg-sky-500"><a>Curriculum vitæ</a></li></a>-->
 	</ul>
 
 
@@ -66,12 +72,18 @@ const changeGame= (game) => {
 		<aurora v-if="currentGame=='aurora'"></aurora>
 
 		<heuresbleues v-if="currentGame=='heuresbleues'"></heuresbleues>
+
+		<vespera v-if="currentGame=='vespera'"></vespera>
+
+		<asterie v-if="currentGame=='asterie'"></asterie>
         
 		<pasjeu v-if="currentGame=='pasjeu'"></pasjeu>
 
 		<soleil v-if="currentGame=='soleil'"></soleil>
 
 		<stella v-if="currentGame=='stella'"></stella>
+
+		<invocation v-if="currentGame=='invocation'"></invocation>
 
 		<sites v-if="currentGame=='sites'"></sites>
 
